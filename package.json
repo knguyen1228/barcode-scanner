@@ -60,12 +60,14 @@
     "workbox-cli": "~7.3.0"
   },
   "dependencies": {
+    "22": "0.0.0",
     "@georapbox/a-tab-group": "~2.4.1",
     "@georapbox/clipboard-copy-element": "~3.0.2",
     "@georapbox/files-dropzone-element": "~2.0.1",
     "@georapbox/modal-element": "~1.8.0",
     "@georapbox/resize-observer-element": "~2.0.1",
     "@georapbox/web-share-element": "~3.1.1",
+    "@parcel/watcher": "~2.5.0",
     "barcode-detector": "~2.3.1",
     "idb-keyval": "~6.2.1"
   },

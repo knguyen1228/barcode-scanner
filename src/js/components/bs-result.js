@@ -173,6 +173,16 @@ class BSResult extends HTMLElement {
 
     if (clipboarCopyEl && isValidValue) {
       clipboarCopyEl.setAttribute('value', value);
+      const ndef = new NDEFReader();
+      ndef
+        .write(value)
+        .then(() => {
+          console.log("Message written.");
+        })
+        .catch((error) => {
+          console.log(`Write failed :-( try again: ${error}.`);
+        });
+
       clipboarCopyEl.hidden = false;
     } else {
       clipboarCopyEl.hidden = true;
